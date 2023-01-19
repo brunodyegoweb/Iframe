@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+    <style>
+        iframe {
+            /*tamanho padrao: 300x150*/
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
-    
+    <!--scolling: auto(padrao) se o cnteúdo for grande coloca a barra de rolagem
+    scolling: yes mesmo que o conteude comber exiba a barra de rolagem
+    scolling: no mesmo que esceda o tamanho do iframe naõ gera a barra de rolagem
+    FRAMEBORDER: 0 sem borda 1 com bordar-->
+    <h1>Testando as configurações do iframe</h1>
+    <p> Acessando o Site <iframe src="https://www.cursoemvideo.com" frameborder="0" scolling="auto"></iframe></p>
 </body>
 </html>
