@@ -29,15 +29,20 @@
         <h1>faça uma Escolha</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam obcaecati, sequi soluta consequatur, qui harum iste tempore beatae reiciendis odit dolore, numquam dicta eligendi incidunt sit earum est voluptas maiores?</p>
         <ul>
+            <!--target: niframe faz aabrir a página dentro do iframe-->
             <li><a href="pag001.html" target="niframe">Página 01</a></li>
             <li><a href="pag002.html" target="niframe">Página 02</a></li>
             <li><a href="pag003.html" target="niframe">Página 03</a></li>
+            <li><a href="formulario.html" target="niframe">Formulário</a></li>
         </ul>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio commodi vitae beatae vero illo cumque soluta, ullam explicabo ipsum, hic repellat! Officia minima tempora dolores, aperiam blanditiis eaque deleniti ut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ea unde alias recusandae corporis molestias ad tempore animi, inventore facilis fugit eius exercitationem vero. Culpa ex quisquam tempore pariatur totam.</p>
     </section>
     <section>
         <!--srcdoc permite códigos em html-->
-        <iframe srcdoc="<h1> Escolha uma das opções acima</h1><p>lorem lorem lorem lorem lorem lorem</p><img src='imagem/cat-1.png'>" name="niframe"></iframe>
+        <!--sandbox: sandbox com esse comado bloquemamos ações maliciosas-->
+        <!--referrerpolicy="noreferrer nao capitura nenhum dado  do usuário-->
+        <!--sandbox: allow-same-origin(permite o acesso desde que seja da mesma origem) allow-forms allow-script-->
+        <iframe srcdoc="<h1> Escolha uma das opções acima</h1><p>lorem lorem lorem lorem lorem lorem</p><img src='imagem/cat-1.png'>" name="niframe" sandbox='sandbox' referrerpolicy="noreferrer"></iframe>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, deleniti minus? Dolor provident reprehenderit minus vero quam officia facere suscipit, dolore dolorum perferendis ducimus animi. Sit, impedit? Odit, repellat eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum numquam deleniti qui adipisci accusamus vero similique quas nemo quasi, ut vel doloremque obcaecati libero ratione pariatur facere nihil, nobis sint?</p>
     </section>
     

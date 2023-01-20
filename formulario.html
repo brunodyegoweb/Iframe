@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(-45deg, #4158d0, #e560dc), #ffb374, #ef5f5f, #d840b6;
+            background-size: 400% 400%;
+            animation: bg 12s ease infinite;
+        }
+
+        @keyframes bg {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 0% 100%;
+            }
+            100% {
+                background-position: 100%100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastre-se aqui</h1>
+    <section>
+        <form action="cadastro.php">
+            <input type="text" name="ntext">
+            <input type="submit" value="Cadstrar">
+        </form>
+    </section>
+</body>
+</html>
